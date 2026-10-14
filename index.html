@@ -46,6 +46,16 @@
     </section>
 
     <section id="vista-stat" hidden>
+      <h2>Revisione settimanale</h2>
+      <div class="riga-form">
+        <button id="settimana-prima" type="button" aria-label="Settimana precedente">◀</button>
+        <span id="settimana-titolo" class="corpo-sett"></span>
+        <button id="settimana-dopo" type="button" aria-label="Settimana successiva">▶</button>
+      </div>
+      <div id="revisione" class="riepilogo"></div>
+      <ul id="revisione-abitudini"></ul>
+      <textarea id="nota-settimana" placeholder="Cosa ha funzionato? Cosa cambio la prossima settimana?" rows="4"></textarea>
+
       <h2>Ultimi 28 giorni</h2>
       <div id="calendario" class="calendario"></div>
       <p class="nota">Più il quadrato è pieno, più hai completato di quanto previsto quel giorno.</p>

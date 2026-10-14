@@ -1,5 +1,5 @@
 // Service worker: tiene l'app in cache così funziona anche senza rete.
-const CACHE = "obiettivi-v1";
+const CACHE = "obiettivi-v2";
 const FILE = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", e => {

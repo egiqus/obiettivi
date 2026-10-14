@@ -6,7 +6,10 @@ App web installabile (PWA) per obiettivi giornalieri, abitudini da costruire e c
 
 - **Oggi**: obiettivi del giorno con "primo passo minuscolo", priorità evidenziate (max 3), pulsante per rimandare a domani, abitudini previste per oggi con serie 🔥.
 - **Abitudini**: abitudini ricorrenti per giorni della settimana; contatore "giorni senza…" per le cattive abitudini, con "Ho ceduto" che lo azzera.
-- **Statistiche**: calendario degli ultimi 28 giorni, percentuale completata, backup/ripristino in JSON, promemoria giornaliero.
+- **Statistiche**:
+  - **Revisione settimanale** (lunedì–domenica): percentuale completata, confronto con la settimana prima, dettaglio per abitudine, obiettivi fatti, cadute e una nota personale salvata per ogni settimana. Con le frecce ◀ ▶ rivedi le settimane passate.
+  - Calendario degli ultimi 28 giorni, backup/ripristino in JSON, promemoria giornaliero.
+- **Traguardo dei 21 giorni**: quando una serie (o i giorni senza una cattiva abitudine) arriva a 21 compare 🏆, ma il conteggio continua. Per le abitudini non giornaliere la serie conta le volte previste.
 
 ## Provarla sul PC
 
