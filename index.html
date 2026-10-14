@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Obiettivi</title>
+</head>
+<body>
+  <header>
+    <h1 id="titolo">Oggi</h1>
+    <p id="sottotitolo"></p>
+  </header>
+
+  <main>
+    <section id="vista-oggi">
+      <form id="form-task" class="riga-form">
+        <input id="task-testo" placeholder="Nuovo obiettivo di oggi…" autocomplete="off" required>
+        <button type="submit">+</button>
+      </form>
+      <input id="task-passo" class="passo" placeholder="Primo passo minuscolo (2 minuti)…" autocomplete="off">
+      <p class="nota" id="nota-priorita"></p>
+      <ul id="lista-task"></ul>
+      <h2>Abitudini di oggi</h2>
+      <ul id="lista-abitudini-oggi"></ul>
+    </section>
+
+    <section id="vista-abitudini" hidden>
+      <h2>Nuove abitudini</h2>
+      <form id="form-abitudine" class="colonna">
+        <input id="abitudine-nome" placeholder="Es. Camminare 20 minuti" autocomplete="off" required>
+        <div id="giorni" class="giorni"></div>
+        <button type="submit">Aggiungi abitudine</button>
+      </form>
+      <ul id="lista-abitudini"></ul>
+
+      <h2>Da eliminare</h2>
+      <form id="form-cattiva" class="riga-form">
+        <input id="cattiva-nome" placeholder="Es. Scroll sui social la sera" autocomplete="off" required>
+        <button type="submit">+</button>
+      </form>
+      <ul id="lista-cattive"></ul>
+    </section>
+
+    <section id="vista-stat" hidden>
+      <h2>Ultimi 28 giorni</h2>
+      <div id="calendario" class="calendario"></div>
+      <p class="nota">Più il quadrato è pieno, più hai completato di quanto previsto quel giorno.</p>
+      <div id="riepilogo" class="riepilogo"></div>
+      <h2>Dati</h2>
+      <div class="riga-form">
+        <button id="esporta" type="button">Esporta backup</button>
+        <button id="importa" type="button">Importa backup</button>
+        <input id="file-importa" type="file" accept="application/json" hidden>
+      </div>
+      <h2>Promemoria</h2>
+      <div class="colonna">
+        <label class="riga-form"><span>Orario</span><input id="ora-promemoria" type="time" value="09:00"></label>
+        <button id="attiva-promemoria" type="button">Attiva promemoria</button>
+        <p class="nota" id="nota-promemoria"></p>
+      </div>
+    </section>
+  </main>
+
+  <nav>
+    <button data-vista="oggi" class="attivo">Oggi</button>
+    <button data-vista="abitudini">Abitudini</button>
+    <button data-vista="stat">Statistiche</button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
